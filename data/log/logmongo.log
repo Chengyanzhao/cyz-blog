@@ -1,0 +1,179 @@
+2017-06-18T01:10:57.962+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-06-18T01:10:58.369+0800 I CONTROL  [initandlisten] MongoDB starting : pid=852 port=27777 dbpath=E:\MyGit\DataRespoitory\db 64-bit host=DESKTOP-8EG647E
+2017-06-18T01:10:58.369+0800 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-06-18T01:10:58.370+0800 I CONTROL  [initandlisten] db version v3.4.4
+2017-06-18T01:10:58.370+0800 I CONTROL  [initandlisten] git version: 888390515874a9debd1b6c5d36559ca86b44babd
+2017-06-18T01:10:58.370+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1u-fips  22 Sep 2016
+2017-06-18T01:10:58.370+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-06-18T01:10:58.370+0800 I CONTROL  [initandlisten] modules: none
+2017-06-18T01:10:58.370+0800 I CONTROL  [initandlisten] build environment:
+2017-06-18T01:10:58.370+0800 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2017-06-18T01:10:58.370+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2017-06-18T01:10:58.370+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-06-18T01:10:58.370+0800 I CONTROL  [initandlisten] options: { config: "E:/MyGit/DataRespoitory/start.conf", net: { port: 27777 }, storage: { dbPath: "E:\MyGit\DataRespoitory\db", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "E:\MyGit\DataRespoitory\log\logmongo.log", quiet: false } }
+2017-06-18T01:10:58.371+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=6875M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-06-18T01:10:58.405+0800 I CONTROL  [initandlisten] 
+2017-06-18T01:10:58.405+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-06-18T01:10:58.405+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-06-18T01:10:58.405+0800 I CONTROL  [initandlisten] 
+2017-06-18T01:10:58.576+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'E:/MyGit/DataRespoitory/db/diagnostic.data'
+2017-06-18T01:10:58.585+0800 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2017-06-18T01:10:58.586+0800 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2017-06-18T01:10:58.587+0800 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+2017-06-18T01:10:58.587+0800 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+2017-06-18T01:10:58.588+0800 I NETWORK  [thread1] waiting for connections on port 27777
+2017-06-18T01:11:31.930+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51033 #1 (1 connection now open)
+2017-06-18T01:11:31.960+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51034 #2 (2 connections now open)
+2017-06-18T01:11:50.826+0800 I COMMAND  [conn1] CMD: drop GeoData.temp
+2017-06-18T01:12:06.354+0800 I COMMAND  [conn1] CMD: drop DocData.temp
+2017-06-18T01:12:43.757+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51050 #3 (3 connections now open)
+2017-06-18T01:12:43.786+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51051 #4 (4 connections now open)
+2017-06-18T01:14:29.572+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51113 #5 (5 connections now open)
+2017-06-18T01:14:29.602+0800 I NETWORK  [thread1] connection accepted from 127.0.0.1:51114 #6 (6 connections now open)
+2017-06-18T01:17:51.414+0800 I -        [conn3] end connection 127.0.0.1:51050 (6 connections now open)
+2017-06-18T01:17:51.415+0800 I -        [conn5] end connection 127.0.0.1:51113 (5 connections now open)
+2017-06-18T01:17:51.415+0800 I -        [conn4] end connection 127.0.0.1:51051 (5 connections now open)
+2017-06-18T01:17:51.417+0800 I -        [conn6] end connection 127.0.0.1:51114 (3 connections now open)
+2017-06-18T01:17:54.443+0800 I -        [conn1] end connection 127.0.0.1:51033 (2 connections now open)
+2017-06-18T01:17:54.443+0800 I -        [conn2] end connection 127.0.0.1:51034 (2 connections now open)
+2017-06-24T15:29:07.417+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-06-24T15:29:07.831+0800 I CONTROL  [initandlisten] MongoDB starting : pid=9296 port=27017 dbpath=E:\MyGit\DataRespoitory\dbc 64-bit host=DESKTOP-8EG647E
+2017-06-24T15:29:07.831+0800 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-06-24T15:29:07.831+0800 I CONTROL  [initandlisten] db version v3.4.5
+2017-06-24T15:29:07.831+0800 I CONTROL  [initandlisten] git version: 520b8f3092c48d934f0cd78ab5f40fe594f96863
+2017-06-24T15:29:07.831+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1u-fips  22 Sep 2016
+2017-06-24T15:29:07.831+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-06-24T15:29:07.831+0800 I CONTROL  [initandlisten] modules: none
+2017-06-24T15:29:07.831+0800 I CONTROL  [initandlisten] build environment:
+2017-06-24T15:29:07.831+0800 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2017-06-24T15:29:07.831+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2017-06-24T15:29:07.831+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-06-24T15:29:07.831+0800 I CONTROL  [initandlisten] options: { config: "E:/MyGit/DataRespoitory/mongodb.conf", net: { bindIp: "127.0.0.1", port: 27017 }, storage: { dbPath: "E:\MyGit\DataRespoitory\dbc", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "E:\MyGit\DataRespoitory\log\logmongo.log", quiet: true } }
+2017-06-24T15:29:07.831+0800 W -        [initandlisten] Detected unclean shutdown - E:\MyGit\DataRespoitory\dbc\mongod.lock is not empty.
+2017-06-24T15:29:07.832+0800 I -        [initandlisten] Detected data files in E:\MyGit\DataRespoitory\dbc created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-06-24T15:29:07.832+0800 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2017-06-24T15:29:07.832+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=6875M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-06-24T15:29:08.170+0800 I CONTROL  [initandlisten] 
+2017-06-24T15:29:08.170+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-06-24T15:29:08.170+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-06-24T15:29:08.170+0800 I CONTROL  [initandlisten] 
+2017-06-24T15:29:08.343+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'E:/MyGit/DataRespoitory/dbc/diagnostic.data'
+2017-06-24T15:29:08.344+0800 I NETWORK  [thread1] waiting for connections on port 27017
+2017-06-24T15:29:09.009+0800 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2017-06-24T15:30:17.108+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-06-24T15:30:17.456+0800 I CONTROL  [initandlisten] MongoDB starting : pid=8984 port=27777 dbpath=E:\MyGit\mongoData\dbc 64-bit host=DESKTOP-8EG647E
+2017-06-24T15:30:17.456+0800 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-06-24T15:30:17.456+0800 I CONTROL  [initandlisten] db version v3.4.5
+2017-06-24T15:30:17.456+0800 I CONTROL  [initandlisten] git version: 520b8f3092c48d934f0cd78ab5f40fe594f96863
+2017-06-24T15:30:17.456+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1u-fips  22 Sep 2016
+2017-06-24T15:30:17.456+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-06-24T15:30:17.456+0800 I CONTROL  [initandlisten] modules: none
+2017-06-24T15:30:17.456+0800 I CONTROL  [initandlisten] build environment:
+2017-06-24T15:30:17.456+0800 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2017-06-24T15:30:17.456+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2017-06-24T15:30:17.456+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-06-24T15:30:17.456+0800 I CONTROL  [initandlisten] options: { config: "E:/MyGit/MongoData/mongodb.conf", net: { bindIp: "127.0.0.1", port: 27777 }, storage: { dbPath: "E:\MyGit\mongoData\dbc", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "E:\MyGit\mongoData\log\logmongo.log", quiet: true } }
+2017-06-24T15:30:17.456+0800 W -        [initandlisten] Detected unclean shutdown - E:\MyGit\mongoData\dbc\mongod.lock is not empty.
+2017-06-24T15:30:17.457+0800 I -        [initandlisten] Detected data files in E:\MyGit\mongoData\dbc created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-06-24T15:30:17.457+0800 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2017-06-24T15:30:17.457+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=6875M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-06-24T15:30:17.662+0800 I CONTROL  [initandlisten] 
+2017-06-24T15:30:17.662+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-06-24T15:30:17.663+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-06-24T15:30:17.663+0800 I CONTROL  [initandlisten] 
+2017-06-24T15:30:17.837+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'E:/MyGit/mongoData/dbc/diagnostic.data'
+2017-06-24T15:30:17.839+0800 I NETWORK  [thread1] waiting for connections on port 27777
+2017-06-24T15:30:18.002+0800 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2017-06-24T15:30:20.726+0800 I NETWORK  [conn1] received client metadata from 127.0.0.1:55489 conn1: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-06-24T15:30:20.765+0800 I NETWORK  [conn2] received client metadata from 127.0.0.1:55490 conn2: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-06-24T15:30:23.370+0800 I NETWORK  [conn3] received client metadata from 127.0.0.1:55491 conn3: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-06-24T15:30:23.408+0800 I NETWORK  [conn4] received client metadata from 127.0.0.1:55492 conn4: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-06-24T15:31:38.105+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-06-24T15:31:38.458+0800 I CONTROL  [initandlisten] MongoDB starting : pid=10936 port=27777 dbpath=E:\MyGit\mongoData\dbc,E:\GCXH\zy3\data\db 64-bit host=DESKTOP-8EG647E
+2017-06-24T15:31:38.458+0800 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-06-24T15:31:38.458+0800 I CONTROL  [initandlisten] db version v3.4.5
+2017-06-24T15:31:38.458+0800 I CONTROL  [initandlisten] git version: 520b8f3092c48d934f0cd78ab5f40fe594f96863
+2017-06-24T15:31:38.458+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1u-fips  22 Sep 2016
+2017-06-24T15:31:38.458+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-06-24T15:31:38.458+0800 I CONTROL  [initandlisten] modules: none
+2017-06-24T15:31:38.458+0800 I CONTROL  [initandlisten] build environment:
+2017-06-24T15:31:38.458+0800 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2017-06-24T15:31:38.458+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2017-06-24T15:31:38.458+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-06-24T15:31:38.458+0800 I CONTROL  [initandlisten] options: { config: "E:/MyGit/MongoData/mongodb.conf", net: { bindIp: "127.0.0.1", port: 27777 }, storage: { dbPath: "E:\MyGit\mongoData\dbc,E:\GCXH\zy3\data\db", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "E:\MyGit\mongoData\log\logmongo.log", quiet: true } }
+2017-06-24T15:31:38.458+0800 I STORAGE  [initandlisten] exception in initAndListen: 29 Data directory E:\MyGit\mongoData\dbc,E:\GCXH\zy3\data\db not found., terminating
+2017-06-24T15:31:38.459+0800 I NETWORK  [initandlisten] shutdown: going to close listening sockets...
+2017-06-24T15:31:38.459+0800 I NETWORK  [initandlisten] shutdown: going to flush diaglog...
+2017-06-24T15:31:38.459+0800 I CONTROL  [initandlisten] now exiting
+2017-06-24T15:31:38.459+0800 I CONTROL  [initandlisten] shutting down with code:100
+2017-06-24T15:57:06.601+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-06-24T15:57:06.950+0800 I CONTROL  [initandlisten] MongoDB starting : pid=2692 port=27777 dbpath=E:\MyGit\mongoData\dbc 64-bit host=DESKTOP-8EG647E
+2017-06-24T15:57:06.950+0800 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-06-24T15:57:06.950+0800 I CONTROL  [initandlisten] db version v3.4.5
+2017-06-24T15:57:06.950+0800 I CONTROL  [initandlisten] git version: 520b8f3092c48d934f0cd78ab5f40fe594f96863
+2017-06-24T15:57:06.950+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1u-fips  22 Sep 2016
+2017-06-24T15:57:06.951+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-06-24T15:57:06.951+0800 I CONTROL  [initandlisten] modules: none
+2017-06-24T15:57:06.951+0800 I CONTROL  [initandlisten] build environment:
+2017-06-24T15:57:06.951+0800 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2017-06-24T15:57:06.951+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2017-06-24T15:57:06.951+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-06-24T15:57:06.951+0800 I CONTROL  [initandlisten] options: { config: "E:/MyGit/MongoData/mongodb.conf", net: { bindIp: "127.0.0.1", port: 27777 }, storage: { dbPath: "E:\MyGit\mongoData\dbc", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "E:\MyGit\mongoData\log\logmongo.log", quiet: true } }
+2017-06-24T15:57:06.951+0800 W -        [initandlisten] Detected unclean shutdown - E:\MyGit\mongoData\dbc\mongod.lock is not empty.
+2017-06-24T15:57:06.952+0800 I -        [initandlisten] Detected data files in E:\MyGit\mongoData\dbc created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-06-24T15:57:06.952+0800 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2017-06-24T15:57:06.952+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=6875M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-06-24T15:57:07.142+0800 I CONTROL  [initandlisten] 
+2017-06-24T15:57:07.142+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-06-24T15:57:07.142+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-06-24T15:57:07.142+0800 I CONTROL  [initandlisten] 
+2017-06-24T15:57:07.311+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'E:/MyGit/mongoData/dbc/diagnostic.data'
+2017-06-24T15:57:07.312+0800 I NETWORK  [thread1] waiting for connections on port 27777
+2017-06-24T15:57:08.007+0800 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2017-06-25T00:30:26.264+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-06-25T00:30:26.632+0800 I CONTROL  [main] Trying to install Windows service 'MongoDB'
+2017-06-25T00:30:26.633+0800 I CONTROL  [main] Service 'MongoDB' (MongoDB) installed with command line 'D:\software\dev\MongoDB\bin\mongod.exe -f E:/MyGit/mongoData/mongodb.conf --service'
+2017-06-25T00:30:26.633+0800 I CONTROL  [main] Service can be started from the command line with 'net start MongoDB'
+2017-06-25T00:30:43.317+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-06-25T00:30:43.666+0800 I CONTROL  [main] Trying to start Windows service 'MongoDB'
+2017-06-25T00:30:43.667+0800 I CONTROL  [initandlisten] MongoDB starting : pid=13528 port=27777 dbpath=E:\MyGit\mongoData\dbc 64-bit host=DESKTOP-8EG647E
+2017-06-25T00:30:43.667+0800 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-06-25T00:30:43.667+0800 I CONTROL  [initandlisten] db version v3.4.5
+2017-06-25T00:30:43.667+0800 I CONTROL  [initandlisten] git version: 520b8f3092c48d934f0cd78ab5f40fe594f96863
+2017-06-25T00:30:43.667+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1u-fips  22 Sep 2016
+2017-06-25T00:30:43.667+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-06-25T00:30:43.667+0800 I CONTROL  [initandlisten] modules: none
+2017-06-25T00:30:43.667+0800 I CONTROL  [initandlisten] build environment:
+2017-06-25T00:30:43.667+0800 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2017-06-25T00:30:43.667+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2017-06-25T00:30:43.667+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-06-25T00:30:43.667+0800 I CONTROL  [initandlisten] options: { config: "E:/MyGit/mongoData/mongodb.conf", net: { bindIp: "127.0.0.1", port: 27777 }, service: true, storage: { dbPath: "E:\MyGit\mongoData\dbc", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "E:\MyGit\mongoData\log\logmongo.log", quiet: true } }
+2017-06-25T00:30:43.667+0800 W -        [initandlisten] Detected unclean shutdown - E:\MyGit\mongoData\dbc\mongod.lock is not empty.
+2017-06-25T00:30:43.668+0800 I -        [initandlisten] Detected data files in E:\MyGit\mongoData\dbc created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-06-25T00:30:43.668+0800 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2017-06-25T00:30:43.668+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=6875M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-06-25T00:30:43.866+0800 I CONTROL  [initandlisten] 
+2017-06-25T00:30:43.866+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-06-25T00:30:43.866+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-06-25T00:30:43.866+0800 I CONTROL  [initandlisten] 
+2017-06-25T00:30:44.063+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'E:/MyGit/mongoData/dbc/diagnostic.data'
+2017-06-25T00:30:44.064+0800 I STORAGE  [initandlisten] Service running
+2017-06-25T00:30:44.065+0800 I NETWORK  [thread1] waiting for connections on port 27777
+2017-06-25T00:30:45.020+0800 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2017-06-25T00:30:54.088+0800 I NETWORK  [conn1] received client metadata from 127.0.0.1:60176 conn1: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-06-25T00:30:54.126+0800 I NETWORK  [conn2] received client metadata from 127.0.0.1:60177 conn2: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-06-25T00:53:34.107+0800 I NETWORK  [conn3] received client metadata from 127.0.0.1:61932 conn3: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-06-25T00:53:34.144+0800 I NETWORK  [conn4] received client metadata from 127.0.0.1:61933 conn4: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-06-25T00:59:04.411+0800 I NETWORK  [conn5] received client metadata from 127.0.0.1:62264 conn5: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-06-25T00:59:04.447+0800 I NETWORK  [conn6] received client metadata from 127.0.0.1:62265 conn6: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-06-25T01:00:46.011+0800 I NETWORK  [conn8] received client metadata from 127.0.0.1:62687 conn8: { application: { name: "Robomongo" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-06-25T01:00:46.054+0800 I NETWORK  [conn9] received client metadata from 127.0.0.1:62688 conn9: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-7-gf394f8c" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-06-25T20:38:50.097+0800 I NETWORK  [conn14] received client metadata from 127.0.0.1:62326 conn14: { driver: { name: "nodejs", version: "2.2.27" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.14393" }, platform: "Node.js v6.10.0, LE, mongodb-core: 2.1.11" }
+2017-06-26T23:15:31.032+0800 I CONTROL  [serviceShutdown] got SERVICE_CONTROL_STOP request from Windows Service Control Manager, will terminate after current cmd ends
+2017-06-26T23:15:31.032+0800 I NETWORK  [serviceShutdown] shutdown: going to close listening sockets...
+2017-06-26T23:15:31.032+0800 I NETWORK  [serviceShutdown] closing listening socket: 536
+2017-06-26T23:15:31.033+0800 I NETWORK  [serviceShutdown] shutdown: going to flush diaglog...
+2017-06-26T23:15:31.033+0800 I FTDC     [serviceShutdown] Shutting down full-time diagnostic data capture
+2017-06-26T23:15:31.038+0800 I STORAGE  [serviceShutdown] WiredTigerKVEngine shutting down
+2017-06-26T23:15:31.140+0800 I STORAGE  [serviceShutdown] shutdown: removing fs lock...
+2017-06-26T23:15:31.141+0800 I CONTROL  [serviceShutdown] now exiting
