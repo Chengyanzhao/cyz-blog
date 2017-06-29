@@ -12,8 +12,9 @@ router.get('/', function (req, res, next) {
 router.get('/resource', (req, res, next) => {
   Resource.find({}, (error, data) => {
     if (data)
-      res(data);
-  })
-  next();
+      res.json(data);
+    else
+      next();
+  });
 });
 module.exports = router;

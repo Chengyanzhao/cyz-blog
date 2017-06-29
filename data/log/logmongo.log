@@ -177,3 +177,34 @@
 2017-06-26T23:15:31.038+0800 I STORAGE  [serviceShutdown] WiredTigerKVEngine shutting down
 2017-06-26T23:15:31.140+0800 I STORAGE  [serviceShutdown] shutdown: removing fs lock...
 2017-06-26T23:15:31.141+0800 I CONTROL  [serviceShutdown] now exiting
+2017-06-29T21:12:17.244+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2017-06-29T21:12:17.700+0800 I CONTROL  [initandlisten] MongoDB starting : pid=13148 port=27777 dbpath=.\dbc 64-bit host=DESKTOP-8EG647E
+2017-06-29T21:12:17.700+0800 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-06-29T21:12:17.700+0800 I CONTROL  [initandlisten] db version v3.4.5
+2017-06-29T21:12:17.700+0800 I CONTROL  [initandlisten] git version: 520b8f3092c48d934f0cd78ab5f40fe594f96863
+2017-06-29T21:12:17.700+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1u-fips  22 Sep 2016
+2017-06-29T21:12:17.700+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-06-29T21:12:17.700+0800 I CONTROL  [initandlisten] modules: none
+2017-06-29T21:12:17.700+0800 I CONTROL  [initandlisten] build environment:
+2017-06-29T21:12:17.700+0800 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2017-06-29T21:12:17.700+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2017-06-29T21:12:17.700+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-06-29T21:12:17.700+0800 I CONTROL  [initandlisten] options: { config: "E:/MyGit/cyz-blog/data/mongodb.conf", net: { bindIp: "127.0.0.1", port: 27777 }, storage: { dbPath: ".\dbc", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: ".\log\logmongo.log", quiet: true } }
+2017-06-29T21:12:17.701+0800 I -        [initandlisten] Detected data files in .\dbc created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-06-29T21:12:17.701+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=6875M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-06-29T21:12:18.042+0800 I CONTROL  [initandlisten] 
+2017-06-29T21:12:18.043+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-06-29T21:12:18.043+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-06-29T21:12:18.043+0800 I CONTROL  [initandlisten] 
+2017-06-29T21:12:18.274+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory './dbc/diagnostic.data'
+2017-06-29T21:12:18.275+0800 I NETWORK  [thread1] waiting for connections on port 27777
+2017-06-29T21:14:49.911+0800 I NETWORK  [conn5] received client metadata from 127.0.0.1:57314 conn5: { driver: { name: "nodejs", version: "2.2.27" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.14393" }, platform: "Node.js v6.10.0, LE, mongodb-core: 2.1.11" }
+2017-06-29T21:16:11.492+0800 I NETWORK  [conn6] received client metadata from 127.0.0.1:57362 conn6: { driver: { name: "nodejs", version: "2.2.27" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.14393" }, platform: "Node.js v6.10.0, LE, mongodb-core: 2.1.11" }
+2017-06-29T21:16:20.609+0800 I NETWORK  [conn7] received client metadata from 127.0.0.1:57374 conn7: { driver: { name: "nodejs", version: "2.2.27" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.14393" }, platform: "Node.js v6.10.0, LE, mongodb-core: 2.1.11" }
+2017-06-29T21:16:40.737+0800 I NETWORK  [conn8] received client metadata from 127.0.0.1:57386 conn8: { driver: { name: "nodejs", version: "2.2.27" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.14393" }, platform: "Node.js v6.10.0, LE, mongodb-core: 2.1.11" }
+2017-06-29T21:17:09.414+0800 I NETWORK  [conn10] received client metadata from 127.0.0.1:57404 conn10: { driver: { name: "nodejs", version: "2.2.27" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.14393" }, platform: "Node.js v6.10.0, LE, mongodb-core: 2.1.11" }
+2017-06-29T21:20:43.182+0800 I NETWORK  [conn11] received client metadata from 127.0.0.1:57542 conn11: { driver: { name: "nodejs", version: "2.2.27" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.14393" }, platform: "Node.js v6.10.0, LE, mongodb-core: 2.1.11" }
+2017-06-29T21:20:58.098+0800 I NETWORK  [conn13] received client metadata from 127.0.0.1:57558 conn13: { driver: { name: "nodejs", version: "2.2.27" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.14393" }, platform: "Node.js v6.10.0, LE, mongodb-core: 2.1.11" }
+2017-06-29T21:21:27.197+0800 I NETWORK  [conn14] received client metadata from 127.0.0.1:57570 conn14: { driver: { name: "nodejs", version: "2.2.27" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.14393" }, platform: "Node.js v6.10.0, LE, mongodb-core: 2.1.11" }
+2017-06-29T21:22:35.582+0800 I NETWORK  [conn15] received client metadata from 127.0.0.1:57607 conn15: { driver: { name: "nodejs", version: "2.2.27" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.14393" }, platform: "Node.js v6.10.0, LE, mongodb-core: 2.1.11" }
+2017-06-29T21:24:37.514+0800 I NETWORK  [conn17] received client metadata from 127.0.0.1:57686 conn17: { driver: { name: "nodejs", version: "2.2.27" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.14393" }, platform: "Node.js v6.10.0, LE, mongodb-core: 2.1.11" }
