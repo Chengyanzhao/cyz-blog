@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Resource from '../components/resource/container.vue'
-import ResourceDetail from '../components/resource/detail.vue'
+import resource from '../components/resource/container.vue'
+import tool from '../components/tool/container.vue'
+// import ResourceDetail from '../components/resource/detail.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -9,14 +10,19 @@ export default new Router({
   routes: [{
     path: '/',
     name: 'resource',
-    component: Resource
+    component: resource
   }, {
     path: '/resource',
-    name: 'Resource',
-    component: Resource
+    name: 'resource',
+    component: resource
   }, {
-    path: '/resource/:name',
-    name: 'detail',
-    component: ResourceDetail
+    path: '/tool',
+    name: 'tool',
+    component: tool
   }]
+  // , {
+  //   path: '/resource/:name',
+  //   name: 'detail',
+  //   component: ResourceDetail
+  // }
 })

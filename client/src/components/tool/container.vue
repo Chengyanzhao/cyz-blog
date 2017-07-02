@@ -8,6 +8,9 @@
         </el-menu-item-group>
       </el-menu>
     </div>
+    <div class="right">
+      <input type="file" ref="fileinput" @change.prevent="postFile($event)">
+    </div>
   </div>
 </template>
 <script>
@@ -15,14 +18,28 @@ import Util from '../../assets/js/Util.js'
 export default {
   data: function () {
     return {
-      menuApi: Util.GetApiRootPath() + 'tool/toolmenu',
+      menuApi: Util.GetApiRootPath() + 'tool',
       toolMenu: null
     }
   },
   created: function () {
-    this.$http.get(this.menuApi).then(response => {
-      this.toolMenu = response.data
-    })
+    // this.$http.get(this.menuApi).then(response => {
+    //   this.toolMenu = response.data
+    // })
+  },
+  methods: {
+    postFile: function (event) {
+      let formdata = new FormData()
+      formdata.append('file', event.target.files[0])
+      // formdata.append('action', 'test')
+      this.$http.post(this.menuApi, {
+        data: formdata,
+        test: 'asd'
+      },
+        {
+          'headers': { 'Content-Type': 'multipart/form-data' }
+        }).then((res) => { console.log(res) })
+    }
   }
 }
 </script>

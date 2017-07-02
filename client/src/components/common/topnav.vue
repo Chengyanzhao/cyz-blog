@@ -18,7 +18,7 @@ export default {
   },
   methods: {
     handleSelect: function (key, keyPath) {
-      console.log(key, keyPath)
+      // console.log(key, keyPath)
     }
   }
 }
