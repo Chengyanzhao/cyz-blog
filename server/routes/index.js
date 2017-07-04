@@ -2,6 +2,8 @@ var express = require('express')
 var router = express.Router()
 var ogr2ogr = require('ogr2ogr')
 var Resource = require('../modules/resource.mod')
+var multer = require('multer')
+var upload = multer({ dest: 'upload/' })
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
@@ -18,7 +20,8 @@ router.get('/resource', (req, res, next) => {
       next();
   });
 });
-router.post('/tool', (req, res, next) => {
+router.post('/tool', upload.single('file'), (req, res, next) => {
+  console.log(req.file.path);
   var ogr = ogr2ogr(req.files.upload.path)
   console.log(req.files)
   if (req.body.targetSrs) {
