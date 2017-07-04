@@ -3,7 +3,9 @@
     <header class="header">
       <topnav></topnav>
     </header>
-    <router-view></router-view>
+    <main class="main">
+      <router-view></router-view>
+    </main>
     <foot v-once></foot>
   </div>
 </template>
@@ -22,6 +24,7 @@ export default {
 
 <style lang="scss">
 #app {
+  position: relative;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -30,6 +33,10 @@ export default {
     position: fixed;
     width: 100%;
     z-index: 1;
+  }
+  .main{
+    position: relative;
+    padding-top:80px;
   }
 }
 </style>

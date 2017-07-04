@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import home from '../components/home/container.vue'
 import resource from '../components/resource/container.vue'
 import tool from '../components/tool/container.vue'
+import imgconvert from '../components/tool/item/imgconvert.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -18,6 +19,9 @@ export default new Router({
   }, {
     path: '/tool',
     name: 'tool',
-    component: tool
+    component: tool,
+    children: [
+      { path: 'imgconvert', component: imgconvert }
+    ]
   }]
 })
