@@ -3,11 +3,11 @@
     <el-row type="flex" class="row-bg" justify="center">
       <el-col :span="20">
         <!--<el-upload action="https://jsonplaceholder.typicode.com/posts/" list-type="picture-card" :on-preview="handlePictureCardPreview" :on-remove="handleRemove">
-                                                          <i class="el-icon-plus"></i>
-                                                        </el-upload>
-                                                        <el-dialog v-model="dialogVisible" size="tiny">
-                                                          <img width="100%" :src="dialogImageUrl" alt="">
-                                                        </el-dialog>-->
+                                                            <i class="el-icon-plus"></i>
+                                                          </el-upload>
+                                                          <el-dialog v-model="dialogVisible" size="tiny">
+                                                            <img width="100%" :src="dialogImageUrl" alt="">
+                                                          </el-dialog>-->
         <form id="uploadform" method="POST" enctype="multipart/form-data" :action="postImgApi" ref="uploadform">
           <input type="file" name="imagefile" @change="upload" ref="inputfile">
         </form>
@@ -22,7 +22,6 @@
   </div>
 </template>
 <script>
-import axios from 'axios'
 import Util from '../../../assets/js/Util.js'
 export default {
   data: function () {
@@ -38,13 +37,15 @@ export default {
   },
   methods: {
     upload: function () {
-      let http = axios.create()
-      http.defaults.headers.post['Content-Type'] = 'multipart/form-data'
       let uploadform = this.$refs.uploadform
       let inputfile = this.$refs.inputfile
       let formData = new FormData(uploadform)
       formData.append('imagefile', inputfile)
-      http.post(this.postImgApi, formData).then(res => {
+      this.$http.post(this.postImgApi, formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data'
+        }
+      }).then(res => {
         debugger
         this.textarea = res.data
       })
