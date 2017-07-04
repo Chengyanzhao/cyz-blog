@@ -18,5 +18,4 @@ router.get('/resource', (req, res, next) => {
   });
 });
 
-
 module.exports = router;

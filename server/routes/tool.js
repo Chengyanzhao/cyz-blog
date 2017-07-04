@@ -3,7 +3,9 @@ var ogr2ogr = require('ogr2ogr')
 var fs = require('fs')
 var multer = require('multer')
 var router = express.Router()
-var upload = multer({ dest: 'upload/' })
+var upload = multer({
+    dest: 'upload/'
+})
 /* GET users listing. */
 router.get('/', function (req, res, next) {
     res.send('respond with a resource');
@@ -34,11 +36,11 @@ router.post('/shp2geoJson', upload.single('shpfile'), (req, res, next) => {
 });
 
 // 图片转base64格式
-router.post('/img2base64', upload.single('imagefile'), (req, res, next) => {
-    let imgPath = req.file.path;
-    let imageBuf = fs.readFileSync(imgPath);
-    let base64Code = imageBuf.toString("base64");
-    console.log(base64Code);
+router.post('/imgconvert', upload.single('imagefile'), (req, res, next) => {
+    let imgPath = req.file.path
+    let imageBuf = fs.readFileSync(imgPath)
+    let base64Code = imageBuf.toString("base64")
+    fs.unlink(imgPath)
     res.json(base64Code)
 })
 module.exports = router;
