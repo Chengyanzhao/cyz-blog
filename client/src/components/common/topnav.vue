@@ -18,7 +18,7 @@ export default {
   },
   methods: {
     handleSelect: function (key, keyPath) {
-      // console.log(key, keyPath)
+      console.log(key, keyPath)
     }
   }
 }
@@ -26,7 +26,7 @@ export default {
 <style lang="scss">
 .topnav {
   .topnav-menu {
-    background-color: rgba(255, 255, 255, 0.4)
+    background-color: #60a940;
   }
 }
 </style>

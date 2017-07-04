@@ -1,25 +1,35 @@
 <template>
   <div id="app">
-    <topnav></topnav>
+    <header class="header">
+      <topnav></topnav>
+    </header>
     <router-view></router-view>
+    <foot v-once></foot>
   </div>
 </template>
 
 <script>
 import topnav from './components/common/topnav'
+import foot from './components/common/foot'
 export default {
   name: 'app',
   components: {
-    topnav
+    topnav,
+    foot
   }
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #60a940;
+  text-align: center;
+  .header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
 }
 </style>

@@ -1,3 +1,3 @@
 exports.GetApiRootPath = function () {
-  return '/api/'
+  return 'http://localhost:3000/'
 }
