@@ -13,6 +13,10 @@ export default new Router({
     name: 'home',
     component: home
   }, {
+    path: '/home',
+    name: 'home',
+    component: home
+  }, {
     path: '/resource',
     name: 'resource',
     component: resource
@@ -20,8 +24,9 @@ export default new Router({
     path: '/tool',
     name: 'tool',
     component: tool,
-    children: [
-      { path: 'imgconvert', component: imgconvert }
-    ]
+    children: [{
+      path: 'imgconvert',
+      component: imgconvert
+    }]
   }]
 })

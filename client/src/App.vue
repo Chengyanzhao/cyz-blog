@@ -36,7 +36,6 @@ export default {
   }
   .main{
     position: relative;
-    padding-top:80px;
   }
 }
 </style>

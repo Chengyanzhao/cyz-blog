@@ -1,7 +1,7 @@
 <template>
   <div class="topnav">
     <el-menu :default-active="activeIndex" class="topnav-menu" mode="horizontal" :router="true" @select="handleSelect">
-      <el-menu-item index="index">首页</el-menu-item>
+      <el-menu-item index="home">首页</el-menu-item>
       <el-menu-item index="blog">博客</el-menu-item>
       <el-menu-item index="resource">资源</el-menu-item>
       <el-menu-item index="tool">工具</el-menu-item>
