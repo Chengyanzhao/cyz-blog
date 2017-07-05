@@ -4,5 +4,8 @@ node_modules
 # server upload Directory
 /server/upload
 
+# client
+/client/npm-debug.log
+
 # mongodb
 data
