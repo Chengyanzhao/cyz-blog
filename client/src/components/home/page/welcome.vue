@@ -6,9 +6,9 @@
       </div>
     </div>
     <div class="motto">
-      <span>心之所愿，无事不成。</span>
+      <span v-text="typingCn"></span>
       <br>
-      <span>Nothing is impossible to a willing heart.</span>
+      <span v-text="typingEn"></span>
     </div>
   </div>
 </template>
@@ -16,7 +16,39 @@
 export default {
   data: function () {
     return {
-      msg: 'welcome'
+      msg: 'welcome',
+      textChinese: '心之所愿，无事不成。',
+      textEnglish: 'Nothing is impossible to a willing heart.',
+      typingCn: '',
+      typingEn: ''
+    }
+  },
+  mounted: function () {
+    this.$nextTick(() => {
+      this.typingCnFn(this.typingCn, this.textChinese)
+      this.typingEnFn(this.typingEn, this.textEnglish)
+    })
+  },
+  methods: {
+    typingCnFn: function () {
+      let curIndex = 0
+      let timer = setInterval(() => {
+        curIndex++
+        this.typingCn = this.textChinese.substring(0, curIndex) + '_'
+        if (curIndex === this.textChinese.length) {
+          clearInterval(timer)
+        }
+      }, 100)
+    },
+    typingEnFn: function () {
+      let curIndex = 0
+      let timer = setInterval(() => {
+        curIndex++
+        this.typingEn = this.textEnglish.substring(0, curIndex) + '_'
+        if (curIndex === this.textEnglish.length) {
+          clearInterval(timer)
+        }
+      }, 70)
     }
   }
 }
@@ -29,8 +61,7 @@ export default {
   line-height: 2rem;
   background-color: rgb(96, 169, 64);
   text-align: center;
-  user-select: none;
-  // -webkit-animation-name: fadeOut;
+  user-select: none; // -webkit-animation-name: fadeOut;
   // /*动画名称*/
   // -webkit-animation-duration: 5s;
   // /*动画持续时间*/
