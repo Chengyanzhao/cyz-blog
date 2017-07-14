@@ -34,8 +34,9 @@ export default {
     width: 100%;
     z-index: 1;
   }
-  .main{
+  .main {
     position: relative;
+    padding-top: 80px;
   }
 }
 </style>

@@ -13,11 +13,12 @@
       </el-col>
       <el-col :span="20">
         <div class="right">
-          <!--<form id="form-demo" method="POST" enctype="multipart/form-data" :action="menuApi" ref="uploadform">
-                      <label for="file">选择上传的文件</label>
-                      <input type="file" id="file" name="shpfile">
-                      <button :click="postFile">确定</button>
-                    </form>-->
+          <!-- <shp-geojson></shp-geojson> -->
+          <form id="form-demo" method="POST" enctype="multipart/form-data" :action="menuApi" ref="uploadform">
+            <label for="file">选择上传的文件</label>
+            <input type="file" id="file" name="shpfile">
+          </form>
+          <button @click="postFile">确定</button>
           <router-view></router-view>
         </div>
       </el-col>
@@ -26,6 +27,7 @@
 </template>
 <script>
 import Util from '../../assets/js/Util.js'
+import shp2GeoJson from './item/shp2GeoJSON'
 export default {
   data: function () {
     return {
@@ -33,17 +35,25 @@ export default {
       toolMenu: null
     }
   },
+  components: {
+    'shp-geojson': shp2GeoJson
+  },
   mounted: function () {
 
   },
   methods: {
     postFile: function () {
-      let file = this.$refs.uploadform.file
+      let file = this.$refs.uploadform.file.files[0]
+      // let file = document.getElementById('file').files[0]
       debugger
       let formData = new FormData()
-      formData.append('file', file)
+      formData.append('shpfile', file)
       this.$http.post(this.menuApi, formData).then(response => {
-        this.toolMenu = response.data
+        if (response.data.success) {
+          console.log(response.data.data)
+        } else {
+          console.log(response.data.message)
+        }
       })
     }
   }
