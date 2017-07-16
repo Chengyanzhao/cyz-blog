@@ -4,6 +4,7 @@ import home from '../components/home/container.vue'
 import resource from '../components/resource/container.vue'
 import tool from '../components/tool/container.vue'
 import imgconvert from '../components/tool/item/imgconvert.vue'
+import shp2geojson from '../components/tool/item/shp2GeoJSON.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -27,6 +28,9 @@ export default new Router({
     children: [{
       path: 'imgconvert',
       component: imgconvert
+    }, {
+      path: 'shp2geojson',
+      component: shp2geojson
     }]
   }]
 })

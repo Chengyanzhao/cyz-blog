@@ -1,8 +1,5 @@
 <template>
   <div id="footer-wrapper">
-    <div id="contact">
-  
-    </div>
     <div id="copyright">
       <span>{{copyRightInfo}}</span>
       </br>
@@ -27,14 +24,9 @@ export default {
 @import '../../assets/css/share.scss';
 #footer-wrapper {
   @include default-theme;
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
   width: 100%;
-  height: 80px;
   & #copyright {
-    height: inherit;
-    transform: translate(0, 35%);
+    padding:10px;
     font-weight: 300;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;

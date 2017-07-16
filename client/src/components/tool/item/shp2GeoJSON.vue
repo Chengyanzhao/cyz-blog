@@ -1,27 +1,36 @@
 <template>
   <div class="shp2geojson">
-    <el-upload class="upload-demo" drag action="https://localhost:3000/tool/shp2geoJson" :on-success="handleAvatarSuccess" :on-progress="handleProgress">
-      <i class="el-icon-upload"></i>
-      <div class="el-upload__text">将文件拖到此处，或
-        <em>点击上传</em>
-      </div>
-      <div class="el-upload__tip" slot="tip">只能上传jpg/png文件，且不超过500kb</div>
-    </el-upload>
+    <form id="form-demo" ref="uploadform">
+      <label for="file">选择上传的文件</label>
+      <input type="file" id="file" name="shpfile">
+    </form>
+    <button @click="shp2GeojsonConvert">确定</button>
+    <div style="margin: 20px 0;"></div>
+    <el-input type="textarea" :autosize="{ minRows: 2, maxRows: 4}" placeholder="请输入内容" v-model="geoJsonText">
+    </el-input>
   </div>
 </template>
 <script>
+import Util from '../../../assets/js/Util.js'
 export default {
   data: function () {
     return {
-      msg: 'shp2geojson'
+      shp2GeoJsonApi: Util.GetApiRootPath() + 'tool/shp2geoJson',
+      geoJsonText: ''
     }
   },
   methods: {
-    handleAvatarSuccess: function (response, file, fileList) {
-      console.log('handleAvatarSuccess')
-    },
-    handleProgress: function (event, file, fileList) {
-      console.log('progress')
+    shp2GeojsonConvert: function () {
+      let file = this.$refs.uploadform.file.files[0]
+      let formData = new FormData()
+      formData.append('shpfile', file)
+      this.$http.post(this.shp2GeoJsonApi, formData).then(res => {
+        if (res.data.success) {
+          this.geoJsonText = JSON.stringify(res.data.data)
+        } else {
+          console.log(res.data.message)
+        }
+      })
     }
   }
 }

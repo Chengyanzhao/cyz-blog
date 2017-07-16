@@ -1,14 +1,16 @@
 <template>
-  <div class="welcome-container">
-    <div class="main-mark">
-      <div class="inner-mark">
-        <span>Cheng</span>
+  <div class="welcome">
+    <div class="center">
+      <div class="main-mark">
+        <div class="inner-mark">
+          <span>Cheng</span>
+        </div>
       </div>
-    </div>
-    <div class="motto">
-      <span v-text="typingCn"></span>
-      <br>
-      <span v-text="typingEn"></span>
+      <div class="motto">
+        <span v-text="typingCn"></span>
+        <br>
+        <span v-text="typingEn"></span>
+      </div>
     </div>
   </div>
 </template>
@@ -54,7 +56,7 @@ export default {
 }
 </script>
 <style lang="scss">
-.welcome-container {
+.welcome {
   position: relative;
   width: 100%;
   height: 100%;
@@ -69,35 +71,36 @@ export default {
   // /*动画次数*/
   // -webkit-animation-delay: 0s;
   // /*延迟时间*/
-  .main-mark {
-    position: relative;
-    margin: 0 auto;
-    border: 3px solid #fff;
-    width: 6rem;
-    height: 6rem;
-    line-height: 6rem;
-    border-radius: 50%;
-    padding: .3rem;
-    .inner-mark {
-      width: 100%;
-      height: 100%;
+  .center {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+
+    .main-mark {
+      position: relative;
+      margin: 0 auto;
+      border: 3px solid #fff;
+      width: 6rem;
+      height: 6rem;
+      line-height: 6rem;
       border-radius: 50%;
-      background-color: #fff;
-      span {
-        font-weight: bolder;
-        color: rgb(96, 169, 64);
+      padding: .3rem;
+      .inner-mark {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #fff;
+        span {
+          font-weight: bolder;
+          color: rgb(96, 169, 64);
+        }
       }
     }
-  }
-  .motto {
-    margin: 5vh;
-    color: #fff;
-  }
-  .note {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 5vh;
+    .motto {
+      margin: 5vh;
+      color: #fff;
+    }
   }
 }
 </style>

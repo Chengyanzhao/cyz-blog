@@ -28,7 +28,6 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   .header {
     position: fixed;
     width: 100%;
@@ -36,7 +35,7 @@ export default {
   }
   .main {
     position: relative;
-    padding-top: 80px;
+    height: 100vh;
   }
 }
 </style>

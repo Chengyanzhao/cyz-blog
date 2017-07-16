@@ -1,8 +1,6 @@
 <template>
   <div class="home">
-    <div class="welcome">
-      <welcome></welcome>
-    </div>
+    <welcome></welcome>
     <div class="yearprocess"></div>
     <div class="cards"></div>
   </div>
@@ -21,6 +19,8 @@ export default {
 }
 </script>
 <style lang="scss">
-.home {}
+.home {
+  height: 100%;
+}
 </style>
 
