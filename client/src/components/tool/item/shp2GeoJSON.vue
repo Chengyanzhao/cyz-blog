@@ -3,7 +3,7 @@
     <input type="file" id="file" name="shpfile" ref="fileInput">
     <el-button type="primary" @click="shp2GeojsonConvert">确定</el-button>
     <div style="margin: 20px 0;"></div>
-    <el-input type="textarea" :autosize="{ minRows: 30, maxRows: 36}" placeholder="请输入内容" v-model="geoJsonText">
+    <el-input type="textarea" :autosize="{ minRows: 30, maxRows: 36}" placeholder="请输入内容" v-model="geoJsonText" spellcheck="false">
     </el-input>
   </div>
 </template>
