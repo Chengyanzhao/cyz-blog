@@ -1,12 +1,9 @@
 <template>
   <div class="shp2geojson">
-    <form id="form-demo" ref="uploadform">
-      <label for="file">选择上传的文件</label>
-      <input type="file" id="file" name="shpfile">
-    </form>
-    <button @click="shp2GeojsonConvert">确定</button>
+    <input type="file" id="file" name="shpfile" ref="fileInput">
+    <el-button type="primary" @click="shp2GeojsonConvert">确定</el-button>
     <div style="margin: 20px 0;"></div>
-    <el-input type="textarea" :autosize="{ minRows: 2, maxRows: 4}" placeholder="请输入内容" v-model="geoJsonText">
+    <el-input type="textarea" :autosize="{ minRows: 30, maxRows: 36}" placeholder="请输入内容" v-model="geoJsonText">
     </el-input>
   </div>
 </template>
@@ -21,12 +18,20 @@ export default {
   },
   methods: {
     shp2GeojsonConvert: function () {
-      let file = this.$refs.uploadform.file.files[0]
+      let fileInputDom = this.$refs.fileInput
+      if (fileInputDom.files.length === 0) {
+        this.$notify.error({
+          title: '错误',
+          message: '请选择shp文件',
+          duration: 5000
+        })
+      }
+      let file = fileInputDom.files[0]
       let formData = new FormData()
       formData.append('shpfile', file)
       this.$http.post(this.shp2GeoJsonApi, formData).then(res => {
         if (res.data.success) {
-          this.geoJsonText = JSON.stringify(res.data.data)
+          this.geoJsonText = JSON.stringify(res.data.data, null, 2)
         } else {
           console.log(res.data.message)
         }
@@ -36,5 +41,5 @@ export default {
 }
 </script>
 <style lang="scss">
-
+.shp2geojson {}
 </style>

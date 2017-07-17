@@ -24,7 +24,7 @@
           </el-menu>
         </div>
       </el-col>
-      <el-col :span="20">
+      <el-col :span="12" :offset="1">
         <div class="right">
           <router-view></router-view>
         </div>
