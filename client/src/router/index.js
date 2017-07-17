@@ -5,6 +5,7 @@ import resource from '../components/resource/container.vue'
 import tool from '../components/tool/container.vue'
 import imgconvert from '../components/tool/item/imgconvert.vue'
 import shp2geojson from '../components/tool/item/shp2GeoJSON.vue'
+import colorConvert from '../components/tool/commonTool/colorConvert.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -31,6 +32,10 @@ export default new Router({
     }, {
       path: 'shp2geojson',
       component: shp2geojson
+    }, {
+      path: 'colorConvert',
+      name: 'colorConvert',
+      component: colorConvert
     }]
   }]
 })
