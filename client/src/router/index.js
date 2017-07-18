@@ -6,6 +6,7 @@ import tool from '../components/tool/container.vue'
 import imgconvert from '../components/tool/item/imgconvert.vue'
 import shp2geojson from '../components/tool/item/shp2GeoJSON.vue'
 import colorConvert from '../components/tool/commonTool/colorConvert.vue'
+import image2base64 from '../components/tool/commonTool/image2base64.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -36,6 +37,10 @@ export default new Router({
       path: 'colorConvert',
       name: 'colorConvert',
       component: colorConvert
+    }, {
+      path: 'image2base64',
+      name: 'image2base64',
+      component: image2base64
     }]
   }]
 })

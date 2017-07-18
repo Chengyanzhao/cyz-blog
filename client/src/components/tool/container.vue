@@ -9,7 +9,7 @@
                 <i class="el-icon-message"></i>导航一
               </template>
               <el-menu-item index="colorConvert">颜色转换器</el-menu-item>
-              <el-menu-item index="1-2">选项2</el-menu-item>
+              <el-menu-item index="tool/image2base64">图片转base64</el-menu-item>
               <el-menu-item index="1-3">选项3</el-menu-item>
               <el-menu-item index="1-4">选项1</el-menu-item>
             </el-submenu>
