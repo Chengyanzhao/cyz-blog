@@ -1,0 +1,160 @@
+{
+  "level": 0,
+  "name": "color",
+  "aliasName": "色彩",
+  "child": [{
+    "level": 1,
+    "name": "colorhunt",
+    "aliasName": "Color Hunt",
+    "describe": "网页颜色搭配",
+    "link": "http://colorhunt.co/"
+  }]
+} {
+  "leve": 0,
+  "name": "font",
+  "aliasName": "字体",
+  "child": [{
+    "leve": 1,
+    "name": "source-code-pro",
+    "aliasName": "Source Code Pro",
+    "describe": "这是一款Adobe制作的字体，适用于系统使用。",
+    "link": "https://github.com/adobe-fonts/source-code-pro"
+  }, {
+    "leve": 1,
+    "name": "helvetica neue",
+    "aliasName": "Helvetica Neue",
+    "describe": "这是一款适合网页展示的字体",
+    "link": "https://github.com/nellielemonier/Helvetica-Neue"
+  }]
+} {
+  "leve": 0,
+  "name": "icon",
+  "aliasName": "图标",
+  "child": [{
+    "leve": 1,
+    "name": "logoko",
+    "aliasName": "logoko",
+    "describe": "一款根据提供的要素定制图标的图标制作网站。",
+    "link": "http://www.logoko.com.cn/"
+  }, {
+    "leve": 1,
+    "name": "easyicon",
+    "aliasName": "easyicon",
+    "describe": "easyicon是一个图标搜索引擎工具，图标资源比较多，种类丰富，并且提供多种格式与尺寸下载。",
+    "link": "http://www.easyicon.net/"
+  }, {
+    "leve": 1,
+    "name": "iconfont",
+    "aliasName": "Iconfont",
+    "describe": "阿里妈妈MUX倾力打造的矢量图标管理、交流平台。",
+    "link": "http://www.iconfont.cn/"
+  }, {
+    "leve": 1,
+    "name": "fontawesome",
+    "aliasName": "Font Awesome",
+    "describe": "一套绝佳的图标字体库和CSS框架。",
+    "link": "http://fontawesome.dashgame.com/"
+  }, {
+    "leve": 1,
+    "name": "iconmonstr",
+    "aliasName": "Iconmonstr",
+    "describe": "Iconmonstr专门提供黑白两色的矢量图标资源。",
+    "link": "https://iconmonstr.com/"
+  }, {
+    "leve": 1,
+    "name": "the-noun-project",
+    "aliasName": "The Noun Project",
+    "describe": "根据选择图标推荐其他样式图标，可自行选择，提供png和svg格式下载",
+    "link": "https://thenounproject.com/"
+  }, {
+    "leve": 1,
+    "name": "fontello",
+    "aliasName": "Fontello",
+    "describe": "可创建自己的自由webfonts图标。选择你需要的图标符号，改变素大小，自定义文件名，下载。",
+    "link": "http://fontello.com/"
+  }]
+} {
+  "leve": 0,
+  "name": "font-icon",
+  "aliasName": "图标字体"
+} {
+  "leve": 0,
+  "name": "page",
+  "aliasName": "网页模版",
+  "child": [{
+    "leve": 1,
+    "name": "jekyll",
+    "aliasName": "Jekyll Themes",
+    "describe": "提供多种多样的网页模版，可下载、预览demo，并且在github上开源。",
+    "link": "http://jekyllthemes.org/"
+  }]
+} {
+  "leve": 0,
+  "name": "package",
+  "aliasName": "module",
+  "child": [{
+      "leve": 1,
+      "name": "figlet",
+      "aliasName": "Figlet",
+      "describe": "FIGlet是基于 ASCII 字符组成的字符画。支持多种字符画风格。并且提供了一个<a href='http: //patorjk.com/software/taag/' target='_blank'>测试工具</a>，可以预览所有风格，并从中选择，非常方便实用！该项目已开源，可以去<a href='https://github.com/patorjk/figlet.js.git/' target='_blank'>GitHub</a>上Fork一下。",
+      "link": "https://www.npmjs.com/package/figlet"
+    },
+    {
+      "leve": 1,
+      "name": "prism",
+      "aliasName": "Prism",
+      "describe": "Prism是一款多种风格，支持多种语言的代码高亮插件。并且提供了<a href='http: //prismjs.com/test.html' target='_blank'>在线试用</a>工具。",
+      "link": "http://prismjs.com/"
+    },
+    {
+      "leve": 1,
+      "name": "browsersync",
+      "aliasName": "Browsersync",
+      "describe": "每个网页，设备和浏览器，测试时间呈指数级增长。从现场重装到URL推动，形式复制点击镜像，Browsersync削减了重复的手工任务。这就像一双额外的双手。从UI或命令行自定义同步设置数组，创建一个个性化的测试环境。需要更多的控制？Browsersync可轻松与您的Web平台，构建工具和其他Node.js项目集成。",
+      "link": "https://www.browsersync.io/"
+    },
+    {
+      "leve": 1,
+      "name": "browser-sync-webpack-plugin",
+      "aliasName": "browser-sync-webpack-plugin",
+      "describe": "Browsersync的webpack插件。",
+      "link": "https://github.com/Va1/browser-sync-webpack-plugin"
+    }
+  ]
+}
+{
+  "leve": 0,
+  "name": "cdn",
+  "aliasName": "cdn",
+  "child": [{
+    "leve": 0,
+    "name": "baidu",
+    "aliasName": "百度静态资源公共库",
+    "describe": "百度静态资源公共库。",
+    "link": "http://cdn.code.baidu.com/"
+  }, {
+    "leve": 1,
+    "name": "unpkg",
+    "aliasName": "unpkg",
+    "describe": "unpkg",
+    "link": "https://unpkg.com/"
+  }, {
+    "leve": 1,
+    "name": "upai",
+    "aliasName": "又拍云",
+    "describe": "又拍云",
+    "link": "http://jscdn.upai.com/"
+  }, {
+    "leve": 1,
+    "name": "staticfile",
+    "aliasName": "七牛云",
+    "describe": "七牛云",
+    "link": "https://www.staticfile.org/"
+  }, {
+    "leve": 1,
+    "name": "google",
+    "aliasName": "google",
+    "describe": "google",
+    "link": "https://developers.google.com/speed/libraries/"
+  }]
+}
