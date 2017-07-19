@@ -34,7 +34,7 @@
 </template>
 <script>
 import Util from '../../assets/js/Util.js'
-import shp2GeoJson from './item/shp2GeoJSON'
+import shp2GeoJson from './gisTool/shp2GeoJSON'
 export default {
   data: function () {
     return {

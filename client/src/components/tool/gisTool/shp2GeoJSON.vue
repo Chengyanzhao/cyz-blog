@@ -5,16 +5,33 @@
     <div style="margin: 20px 0;"></div>
     <el-input type="textarea" :autosize="{ minRows: 30, maxRows: 36}" placeholder="请输入内容" v-model="geoJsonText" spellcheck="false">
     </el-input>
+    <el-row type="flex" class="row-bg">
+      <el-col :span="24">
+        <el-card class="box-card">
+          <div id="map">
+          </div>
+        </el-card>
+      </el-col>
+    </el-row>
   </div>
 </template>
 <script>
 import Util from '../../../assets/js/Util.js'
+import ol from 'openlayers'
+import 'openlayers/css/ol.css'
 export default {
   data: function () {
     return {
       shp2GeoJsonApi: Util.GetApiRootPath() + 'tool/shp2geoJson',
-      geoJsonText: ''
+      geoJsonText: '',
+      map: null,
+      geoJsonLayer: null
     }
+  },
+  mounted: function () {
+    this.$nextTick(() => {
+      this.initMap()
+    })
   },
   methods: {
     shp2GeojsonConvert: function () {
@@ -36,6 +53,30 @@ export default {
           console.log(res.data.message)
         }
       })
+    },
+    initMap: function () {
+      this.map = new ol.Map({
+        target: 'map',
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()
+          })
+        ],
+        view: new ol.View({
+          center: ol.proj.fromLonLat([37.41, 8.82]),
+          zoom: 4
+        })
+      })
+    },
+    addGeoJson: function () {
+      this.geoJsonLayer = new ol.layer.Vector({
+        title: 'GeoJsonLayer',
+        source: new ol.source.Vector({
+          projection: 'EPSG:4326',
+          format: new ol.format.GeoJSON().readFeatures(this.geoJsonText)
+        })
+      })
+      this.map.addLayer(this.geoJsonLayer)
     }
   }
 }
