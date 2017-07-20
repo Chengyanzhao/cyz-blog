@@ -10,34 +10,13 @@ function geoJson2ShpSync(shpZipFile, shpName, geoJson) {
                 .pipe(unzip.Extract({
                     path: shpDir
                 }))
-                .on('error', function (err, data) {
-                    updateJobInfo(job.jobId, {
-                        jobStatus: 5,
-                        jobIsNewState: true,
-                        jobErrorInfo: '压缩shp错误' + err.message
-                    });
-                    console.log(SERVELOG_PREFIX + ':' + job.jobId + ':压缩shp错误:' + err.message);
-                })
+                .on('error', function (err, data) {})
                 .on('close', function () {
                     resolve(shpZipPath);
                 })
         });
-        fileWriteStream.on("error", function (err) {
-            updateJobInfo(job.jobId, {
-                jobStatus: 5,
-                jobIsNewState: true,
-                jobErrorInfo: '写入shp错误' + err.message
-            });
-            console.log(SERVELOG_PREFIX + ':' + job.jobId + ':写入shp错误:' + err.message);
-        });
-        shapefile.on("error", function (err) {
-            updateJobInfo(job.jobId, {
-                jobStatus: 5,
-                jobIsNewState: true,
-                jobErrorInfo: '读取geoJson错误' + err.message
-            });
-            console.log(SERVELOG_PREFIX + ':' + job.jobId + ':读取geoJson出错:' + err.message);
-        });
+        fileWriteStream.on("error", function (err) {});
+        shapefile.on("error", function (err) {});
         shapefile.pipe(fileWriteStream);
     });
 }
