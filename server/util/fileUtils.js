@@ -8,6 +8,24 @@ function sendFile(filePath, res) {
         res.download(filePath);
 }
 
+// 生成文件
+function writeFile(filePath, info) {
+    return new Promise((resolve, reject) => {
+        let dir = path.dirname(filePath);
+        let file = path.basename(filePath);
+        console.log(`dir:${dir}`);
+        console.log(`file:${file}`);
+        if (!fs.existsSync(dir))
+            fs.mkdirSync(dir);
+        if (!file) return;
+        fs.writeFile(filePath, info, function (err) {
+            if (err) {
+                reject(err);
+            }
+            resolve(filePath);
+        });
+    });
+}
 /**
  * 创建文件软链接
  * 
@@ -59,4 +77,6 @@ function mklink(src, dst, errOps) {
     })
 }
 
+exports.senfFile = senfFile;
 exports.mklink = mklink;
+exports.writeFile = writeFile;
